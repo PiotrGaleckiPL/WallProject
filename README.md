@@ -1,6 +1,7 @@
 # WallProject
 
 This project implements a simple wall structure using Java. The wall is composed of blocks, and there are two types of blocks: `SimpleBlock` and `ComplexBlock`. The wall itself is represented by the `Wall` class.
+
 ## Interfaces
 
 ### Structure
@@ -85,7 +86,7 @@ System.out.println("Total Number of Blocks: " + totalBlocks);
 ```
 ## Tests
 
-This project includes a suite of tests written according to the BDD approach to ensure the correctness of the implemented functionality.
+This project includes unit tests written according to the BDD approach to ensure the correctness of the implemented functionality.
 
 ### Running the tests
 
@@ -93,5 +94,11 @@ To run the tests, use the following commands:
 
 ```bash
 # Run all tests
-./mvn test
+./mvn clean test
+```
+
+### Tests Coverage
+
+This project features Jacoco, an open-source Java library for code coverage. Code coverage raport is generated after running the tests. `index.html` file with report is located in '/target/site/jacoco' directory.
+
 
